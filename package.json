@@ -1,0 +1,11 @@
+{
+  "name": "introduction-puppeteer",
+  "version": "1.0.0",
+  "description": "Ejemplos de caso de uso de puppeteer v3",
+  "main": "index.js",
+  "author": "Kami-Juan",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^3.0.4"
+  }
+}
