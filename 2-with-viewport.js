@@ -5,9 +5,9 @@ const URL = 'https://mangaplus.shueisha.co.jp/updates';
 (async () => {
   const browser = await puppeteer.launch({
     headless: false,
-    // Obtiene el tamaño del viewport por el tamaño del navegador
+    // Converts the viewport size to the browser size
     defaultViewport: null,
-    // Personaliza el tamaño del navegador
+    // Custom the size browser
     args: [
       '--window-size=1920,920',
     ],

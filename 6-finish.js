@@ -34,7 +34,7 @@ const URL = 'https://mangaplus.shueisha.co.jp/updates';
     await Promise.all([
       page.waitForNavigation(),
       page.goto(manga.url)
-    ])
+    ]);
 
     await page.waitForFunction("document.querySelector('.ChapterList-module_numberOfViews_14bIt')");
 
@@ -55,5 +55,7 @@ const URL = 'https://mangaplus.shueisha.co.jp/updates';
     manga.viewers = viewers;
   }
 
-  console.log(popularMangas);
+  console.dir(popularMangas, { maxArrayLength: null });
+
+  await browser.close();
 })();
